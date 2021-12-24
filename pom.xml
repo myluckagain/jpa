@@ -8,8 +8,8 @@
 		<version>2.6.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>ru.sysout</groupId>
-	<artifactId>embeddedid</artifactId>
+	<groupId>ru.some</groupId>
+	<artifactId>jpa-mapping</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>inherit1</name>
 

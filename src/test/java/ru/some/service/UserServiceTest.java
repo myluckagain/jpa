@@ -7,6 +7,6 @@ import org.springframework.test.annotation.Commit;
 @DataJpaTest
 @AutoConfigureTestDatabase(replace= AutoConfigureTestDatabase.Replace.NONE)
 @Commit
-public class Test {
+public class UserServiceTest {
 
 }
