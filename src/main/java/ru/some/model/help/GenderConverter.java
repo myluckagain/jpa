@@ -12,6 +12,6 @@ public class GenderConverter implements AttributeConverter<GenderEnum, String> {
 
     @Override
     public GenderEnum convertToEntityAttribute(String dbData) {
-        return GenderEnum.fromTextName(dbData);
+        return (GenderEnum) Helper.fromTextName(GenderEnum.class, dbData) ;
     }
 }

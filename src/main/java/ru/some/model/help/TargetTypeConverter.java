@@ -12,6 +12,6 @@ public class TargetTypeConverter implements AttributeConverter<TargetTypeEnum, S
 
     @Override
     public TargetTypeEnum convertToEntityAttribute(String dbData) {
-        return TargetTypeEnum.fromTextName(dbData);
+        return (TargetTypeEnum) Helper.fromTextName(TargetTypeEnum.class, dbData) ;
     }
 }

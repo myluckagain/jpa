@@ -12,6 +12,6 @@ public class FriendshipStatusConverter implements AttributeConverter<FriendshipS
 
     @Override
     public FriendshipStatusesEnum convertToEntityAttribute(String dbData) {
-        return FriendshipStatusesEnum.fromTextName(dbData);
+        return (FriendshipStatusesEnum) Helper.fromTextName(FriendshipStatusesEnum.class, dbData) ;
     }
 }

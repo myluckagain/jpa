@@ -2,7 +2,7 @@ package ru.some.model.help;
 
 import lombok.Getter;
 
-public enum FriendshipStatusesEnum {
+public enum FriendshipStatusesEnum implements HasName{
     REQUESTED("Requested"),
     CONFIRMED("Confirmed"),
     REJECTED("Rejected");
@@ -12,21 +12,5 @@ public enum FriendshipStatusesEnum {
     @Getter
     String name;
 
-    public static FriendshipStatusesEnum fromTextName(String shortName) {
-        switch (shortName) {
-            case "Requested":
-                return FriendshipStatusesEnum.REQUESTED;
 
-            case "Confirmed":
-                return FriendshipStatusesEnum.CONFIRMED;
-
-            case "Rejected":
-                return FriendshipStatusesEnum.REJECTED;
-
-
-            default:
-                throw new IllegalArgumentException("ShortName [" + shortName
-                        + "] not supported.");
-        }
-    }
 }
